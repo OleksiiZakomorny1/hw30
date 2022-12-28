@@ -11,7 +11,16 @@
 // let num3 = Number(num1) + num2
 // alert(`${num3}`)
 
-//flash-drive
-let flashSize = prompt('Size of the flash-drive is (in gb)')
-let amountOfFiles = Math.floor((flashSize * 1000) / 820)
-alert(`${amountOfFiles} can be downloaded on the flash-drive`)
+// //flash-drive
+// let flashSize = prompt('Size of the flash-drive is (in gb)')
+// let amountOfFiles = Math.floor((flashSize * 1000) / 820)
+// alert(`${amountOfFiles} can be downloaded on the flash-drive`)
+
+//normal
+//chocolate
+let amountOfMoney = prompt('How much money do you have?', '')
+let chocolatePrice = prompt('Price of the chocolate you want', '')
+let amountOfChocolate = Math.floor(amountOfMoney / chocolatePrice)
+let change = amountOfMoney % chocolatePrice
+alert(`You can buy ${amountOfChocolate} chocolate bars`)
+alert(`This is your change: ${change}`)
