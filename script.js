@@ -25,11 +25,20 @@
 // alert(`You can buy ${amountOfChocolate} chocolate bars`)
 // alert(`This is your change: ${change}`)
 
-//triple
-let tripleNum = prompt('Type in your tree-digit number', '')
-let reverseNum1 = tripleNum % 10
-num2 = parseInt(tripleNum / 10)
-let reverseNum2 = num2 % 10
-num3 = parseInt(num2 / 10)
-let reverseNum3 = num3 % 10
-alert(`Reverse number is ${reverseNum1}${reverseNum2}${reverseNum3}`)
+// //triple
+// let tripleNum = prompt('Type in your tree-digit number', '')
+// let reverseNum1 = tripleNum % 10
+// num2 = parseInt(tripleNum / 10)
+// let reverseNum2 = num2 % 10
+// num3 = parseInt(num2 / 10)
+// let reverseNum3 = num3 % 10
+// alert(`Reverse number is ${reverseNum1}${reverseNum2}${reverseNum3}`)
+
+//max
+//bank
+let deposit = prompt('Your deposit (in $): ', '')
+let depositRate = 0.05
+let twoMonth = 61
+let year = 365
+let percents = ((((deposit * depositRate) / year)) * twoMonth).toFixed(2)
+alert(`The amount of accrued interest: ${percents}`)
